@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-sky: #BFE3F5;
+    --color-yellow: #FFC93C;
+    --color-pink: #FF3D85;
+    --color-ink: #21173A;
+    --color-cream: #FFF6E0;
+    --color-purple: #6B4A9E;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #BFE3F5;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #BFE3F5;
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #21173A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Baloo 2', cursive, system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: #FFC93C;
+    color: #21173A;
+  }
+}
+
+/* Custom animations */
+@keyframes bob {
+  0% { transform: translateY(0) rotate(-7deg); }
+  50% { transform: translateY(-16px) rotate(-7deg); }
+  100% { transform: translateY(0) rotate(-7deg); }
+}
+
+@keyframes bobR {
+  0% { transform: translateY(0) rotate(6deg); }
+  50% { transform: translateY(-14px) rotate(6deg); }
+  100% { transform: translateY(0) rotate(6deg); }
+}
+
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.7); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-8px) scale(1.02); }
+}
+
+.animate-bob {
+  animation: bob 6s ease-in-out infinite;
+}
+
+.animate-bob-r {
+  animation: bobR 7.5s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Custom cartoon button & card 3D shadows */
+.shadow-cartoon {
+  box-shadow: 0 5px 0 #21173A;
+}
+
+.shadow-cartoon-lg {
+  box-shadow: 0 7px 0 #21173A;
+}
+
+.shadow-cartoon-xl {
+  box-shadow: 0 10px 0 #21173A;
+}
+
+.shadow-cartoon-sm {
+  box-shadow: 0 3px 0 #21173A;
+}

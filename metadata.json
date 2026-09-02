@@ -1,0 +1,6 @@
+{
+  "name": "LastChance",
+  "description": "Plateforme de fidélisation et jeux marketing par QR code pour commerces, restaurants et bars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
